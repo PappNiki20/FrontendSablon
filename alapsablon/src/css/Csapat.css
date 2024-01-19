@@ -1,22 +1,44 @@
-.csapatcontainer {
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
-  
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  
-  .change .bar2 {opacity: 0;}
-  
-  .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+body{
+    background-color: blanchedalmond;
+}
+.nevek{
+    margin: 20px;
+    text-align: justify;
+    background-color: antiquewhite;
+    border: 2px solid grey;
+    border-radius: 5px ;
+}
+.nevek ul li{
+    list-style:none;
+}
+.nevek ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.nevek ul li a{
+    text-decoration: none;
+    color: black;
+}
+.nevek ul li a:hover {
+    color: red;
+}
+.leiras{
+    padding: 5px;
+    margin: 20px;
+    text-align: justify;
+    background-color: antiquewhite;
+    border: 2px solid grey;
+    border-radius: 5px ;
+}
+
+.galeria {
+   
+    width: 700px;
+}
+.videok{
+    margin: 15px;
+   
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
