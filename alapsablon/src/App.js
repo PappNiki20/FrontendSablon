@@ -8,17 +8,20 @@ import Layout from './LayOut';
 
 
 function App() {
-  
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Fooldal />} />
-          <Route path="alkoto" element={<Alkoto />} />
-          <Route path="csapat" element={<Csapat />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <header><h1>Arc Projekt</h1> </header>
+      
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Fooldal />} />
+            <Route path="alkoto" element={<Alkoto />} />
+            <Route path="csapat" element={<Csapat />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
