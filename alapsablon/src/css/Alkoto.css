@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  text-align: center;
+}
+.alkoto {
+  margin: auto;
+  width: 80%;
+  padding: 0%;
+  background-color: rgb(246, 213, 174);
+}
+.egyAlkoto{
+  background-color: white;
+}
+.felsoresz {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.alkotokep {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+.kep {
+  text-align: right;
+  width: 50%;
+}
+p{
+  text-align: justify;
+}
