@@ -1,5 +1,5 @@
 export default function Alkoto(){
     return(
-        <div className="alkoto"> alkotoK  </div>
+        <div className="alkoto"> alkoto  </div>
     )
 }
