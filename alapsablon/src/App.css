@@ -9,11 +9,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-div header{
-  text-align: center;
-}
+
 .App-link {
   color: #61dafb;
 }
-
-
+.menu{
+  background-color: burlywood; 
+  height: 100px;
+  
+}
+header{
+  text-align: center;
+  margin-right: 40px;
+}
+.ms-auto{
+  margin-block: -50px;
+  margin-block-end: 40px;
+}
