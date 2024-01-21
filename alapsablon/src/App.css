@@ -26,3 +26,12 @@ header{
   margin-block: -50px;
   margin-block-end: 40px;
 }
+/* MyComponent.css */
+
+.navbar-toggler-icon,
+.fa-bars {
+  color: #f9f4f4 !important; 
+  
+  
+}
+
