@@ -18,13 +18,14 @@ const BgImageWithNavbar = () => {
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className='text-white text-center'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
+                  <h2 className='mb-3 padd'>Üdvözöllek az oldalon!</h2>
+                  <h3 className='mb-3 padd'>Art Of Survival projekt bemutatása </h3>
                   <h4 className='mb-4'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </h4>
-                  <Link className='btn btn-outline-light btn-lg' to='/csapat' role='button'>
-                    Csapatok
+                  <Link className='btn btn-outline-light btn-lg' to='/projekt' role='button'>
+                   A Projektről bővebben..
                   </Link>
                 </div>
               </div>
@@ -42,7 +43,7 @@ const BgImageWithNavbar = () => {
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className='text-white text-center'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3'>Üdvözöllek az oldalon!</h3>
+                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
                   <h4 className='mb-4'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -66,7 +67,7 @@ const BgImageWithNavbar = () => {
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className='text-white text-center'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3'>Üdvözöllek az oldalon!</h3>
+                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
                   <h4 className='mb-4'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
