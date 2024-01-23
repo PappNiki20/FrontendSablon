@@ -1,12 +1,14 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Csapat.css";
+
+import "../css/Kozos.css";
 import { kepek } from "../KepLista";
 import { Carousel, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import KepGaleria from "./Galeria";
 export default function Csapat() {
   return (
-    <div className="csapat">
+    <div className="csapat summary-section">
       <div className="tarolo">
         <div className="nevek">
           <h3>Csapattagok</h3>
@@ -64,15 +66,15 @@ export default function Csapat() {
           </Carousel>
         </div>
         <div className="videok ">
-          <div className="videok card">
+          <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>
           <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>

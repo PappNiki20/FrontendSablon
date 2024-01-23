@@ -1,5 +1,7 @@
 // Fooldal.js
 import "../css/Fooldal.css";
+
+import "../css/Kozos.css";
 import React from 'react';
 import BgImageWithNavbar from '../BgImageWithNavbar';
 
