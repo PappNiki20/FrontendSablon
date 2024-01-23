@@ -27,6 +27,7 @@ const LayOut = () => {
             <Nav className="mr-auto">
               <Nav.Link as={Link} to="/alkoto">Alkotó</Nav.Link>
               <Nav.Link as={Link} to="/csapat">Csapat</Nav.Link>
+              <Nav.Link as={Link} to="/kategoria">Kategóriák</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
