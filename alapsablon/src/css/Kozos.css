@@ -3,14 +3,6 @@
   margin: 0;
   padding: 0;
 }
-
-body {
-  background-color: #FF9D4B;
-}
-.cont{
-    
-  background-color: #FFA860;
-}
 .summary-section {
   display: flex;
   align-items: center;
