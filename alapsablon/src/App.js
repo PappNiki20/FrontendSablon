@@ -15,6 +15,7 @@ function App() {
             <Route index element={<Fooldal />} />
             <Route path="alkoto" element={<Alkoto />} />
             <Route path="csapat" element={<Csapat />} />
+           {/*  <Route path="kategoria" element={<Kategoria />} /> */}
           </Route>
         </Routes>
       </BrowserRouter>

@@ -9,13 +9,16 @@
   }
   .summary-section {
     display: flex;
-    
+   
     align-items: center;
     justify-content: space-around;
     margin-top: 20px;
     flex-direction: column; 
     text-align: center; 
    
+  }
+  .padd{
+    padding:15px;
   }
   
   .summary-content {
@@ -31,6 +34,7 @@
     padding: 0;
   }
 .cont{
+  padding: 15px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

@@ -17,7 +17,7 @@ const LayOut = () => {
 
     <>
      
-      <header className='p-3 '><h1>Arc Projekt</h1></header>
+      <header className='p-3 '><h1>Art Of Survival</h1></header>
       
      <Navbar bg="dark" variant="dark" expand="sm" className='p-2'>
         <Container>
