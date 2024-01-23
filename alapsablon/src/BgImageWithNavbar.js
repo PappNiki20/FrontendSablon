@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 
 const BgImageWithNavbar = () => {
   return (
-    <header style={{ paddingLeft: 0 }}>
+
+    <header  className="hero-header" style={{ paddingLeft: 0}}>
       <Carousel>
         <Carousel.Item>
           <img
@@ -46,8 +47,8 @@ const BgImageWithNavbar = () => {
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </h4>
-                  <Link className='btn btn-outline-light btn-lg' to='/csapat' role='button'>
-                    Csapatok
+                  <Link className='btn btn-outline-light btn-lg' to='/alkoto' role='button'>
+                    Alkotók
                   </Link>
                 </div>
               </div>

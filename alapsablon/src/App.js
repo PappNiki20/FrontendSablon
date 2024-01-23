@@ -7,9 +7,7 @@ import Csapat from './pages/Csapat';
 
 function App() {
   return (
-    <div className='menu'>
-      <header><h1>Arc Projekt</h1></header>
-    <div className='feljebb'>
+   
       <BrowserRouter >
      
         <Routes>
@@ -20,9 +18,7 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      </div>
-      
-    </div>
+   
   );
 }
 

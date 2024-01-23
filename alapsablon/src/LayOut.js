@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Navbar, Container, Button, Collapse } from 'react-bootstrap';
+import { Navbar, Container, Button, Collapse, Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,37 +10,41 @@ const LayOut = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsOpen(!isOpen);
+    
   };
 
   return (
+
     <>
-      <Navbar>
-        <Container fluid>
-          <Button className='ms-auto bg-opacity-50' type='button' variant='secondary' onClick={toggleNavbar}>
-            <FontAwesomeIcon icon={faBars} />
-          </Button>
+     
+      <header className='p-3 '><h1>Arc Projekt</h1></header>
+      
+     <Navbar bg="dark" variant="dark" expand="sm" className='p-2'>
+        <Container>
+          <Navbar.Brand as={Link} to="/">Főoldal</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link as={Link} to="/alkoto">Alkotó</Nav.Link>
+              <Nav.Link as={Link} to="/csapat">Csapat</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
+      <Container>
+        {/* Ide kerül majd az útvonalak/linkek által meghatározott tartalom */}
+        <Outlet />
+      </Container>
+      <footer>
+        <div className="footer-content">
+          <h2 className="footer-heading">Iskola neve:   </h2>
+          <p className="footer-contact">Telefonszám: +36 30 123 4567</p>
+          <p className="footer-contact">E-mail: info@iskola.hu</p>
+        </div>
+      </footer>
+     
 
-      <Collapse in={isOpen}>
-  <div className=' shadow-3 p-4 nav' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)'}} >
-    <Button as={Link} to="/" variant='link' block className='text-black m-0'>
-      Főoldal
-    </Button>
-    <Button as={Link} to="alkoto" variant='link' block className='text-black m-0'>
-      Alkotó
-    </Button>
-    <Button as={Link} to="csapat" variant='link' block className='text-black m-0'>
-      Csapat
-    </Button>
-  </div>
-</Collapse>
-
-    
-
-      {/* Ide kerül majd az útvonalak/linkek által meghatározott tartalom */}
-      <Outlet />
+      
     </>
   );
 };
