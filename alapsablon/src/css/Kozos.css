@@ -5,28 +5,12 @@
 }
 
 body {
-<<<<<<< HEAD
   background-image: url("https://media.istockphoto.com/id/1059274406/photo/abstract-blur-softness-beauty-pink-and-blush-colorful-image-gradient-with-dark-edge-effect.webp?b=1&s=170667a&w=0&k=20&c=bGwPsl8b9XL_09wIOuRmvZlYtbz1x4eucwXdlRUMMtE=");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 
-=======
-
-
-  background-image:url("https://media.istockphoto.com/id/1059274406/photo/abstract-blur-softness-beauty-pink-and-blush-colorful-image-gradient-with-dark-edge-effect.webp?b=1&s=170667a&w=0&k=20&c=bGwPsl8b9XL_09wIOuRmvZlYtbz1x4eucwXdlRUMMtE=") ;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
- 
-   
-  
-
-}
-
-
->>>>>>> df423bf8453bac8e9e1918a6be78ddc15b169637
 .summary-section {
   display: flex;
   align-items: center;
