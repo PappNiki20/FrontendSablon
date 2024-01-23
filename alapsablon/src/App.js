@@ -5,6 +5,7 @@ import Fooldal from "./pages/Fooldal";
 import Alkoto from "./pages/Alkoto";
 import Csapat from "./pages/Csapat";
 import Kategoria from "./pages/Kategoria";
+import Buszkesegeink from "./pages/Buszkesegeink";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="alkoto" element={<Alkoto />} />
           <Route path="csapat" element={<Csapat />} />
           <Route path="kategoria" element={<Kategoria />} />
+          <Route path="buszkesegeink" element={<Buszkesegeink />} />
         </Route>
       </Routes>
     </BrowserRouter>

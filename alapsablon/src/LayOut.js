@@ -28,6 +28,7 @@ const LayOut = () => {
               <Nav.Link as={Link} to="/alkoto">Alkotó</Nav.Link>
               <Nav.Link as={Link} to="/csapat">Csapat</Nav.Link>
               <Nav.Link as={Link} to="/kategoria">Kategóriák</Nav.Link>
+              <Nav.Link as={Link} to="/buszkesegeink">Büszkeségeink</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

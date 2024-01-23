@@ -3,7 +3,8 @@ import "../css/Csapat.css";
 
 import "../css/Kozos.css";
 import { kepek } from "../KepLista";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import KepGaleria from "./Galeria";
 export default function Csapat() {
   return (
@@ -13,16 +14,24 @@ export default function Csapat() {
           <h3>Csapattagok</h3>
           <ul>
             <li>
-              <a href="#">Kovács Anna - grafikus</a>
+              <Nav.Link as={Link} to="/alkoto">
+                Zöldlomb Legolas - designer
+              </Nav.Link>
             </li>
             <li>
-              <a href="#">Varga János - designer</a>
+              <Nav.Link as={Link} to="/alkoto">
+                Zöldlomb Legolas - designer
+              </Nav.Link>
             </li>
             <li>
-              <a href="#">Nagy Eszter - designer</a>
+              <Nav.Link as={Link} to="/alkoto">
+                Zöldlomb Legolas - designer
+              </Nav.Link>
             </li>
             <li>
-              <a href="#">Szabó Péter - festő</a>
+              <Nav.Link as={Link} to="/alkoto">
+                Zöldlomb Legolas - designer
+              </Nav.Link>
             </li>
           </ul>
         </div>
@@ -57,21 +66,21 @@ export default function Csapat() {
           </Carousel>
         </div>
         <div className="videok ">
-          <div className="videok card">
+          <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>
           <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>
         </div>
         <div className="kepgaleria container">
-        <KepGaleria  kepek={kepek}/>
+          <KepGaleria kepek={kepek} />
         </div>
       </div>
     </div>
