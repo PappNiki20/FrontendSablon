@@ -64,15 +64,15 @@ export default function Csapat() {
           </Carousel>
         </div>
         <div className="videok ">
-          <div className="videok card">
+          <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>
           <div className="card">
             <iframe
-              className="card-body"
+              className="img-thumbnail"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
             ></iframe>
           </div>
