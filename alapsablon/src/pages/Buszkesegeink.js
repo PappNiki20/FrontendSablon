@@ -2,7 +2,7 @@ import { alkotok } from "../Alkotok";
 export default function Buszkesegeink(){
     return(
         <div className="buszkesegek">
-        {alkotok.map((elem, index) => {
+        {/* {alkotok.map((elem, index) => {
         <div className="kep" >
         <h2>{elem.nev}</h2>
             <img src={props.obj.src} alt=""/>
@@ -11,7 +11,7 @@ export default function Buszkesegeink(){
         <p>{props.obj.ar}</p>
         <button type="button" onClick={kattintas}>Kosárba</button>
         </div>
-        </div>})}
+        </div>})} */}
         </div>
     );
 
