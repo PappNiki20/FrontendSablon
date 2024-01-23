@@ -1,4 +1,5 @@
 import "../css/Alkoto.css";
+import "../css/Kozos.css";
 export default function Alkoto() {
   return (
     <div className="alkoto summary-section">

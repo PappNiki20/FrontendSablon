@@ -1,11 +1,13 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/Csapat.css";
+
+import "../css/Kozos.css";
 import { kepek } from "../KepLista";
 import { Carousel } from "react-bootstrap";
 import KepGaleria from "./Galeria";
 export default function Csapat() {
   return (
-    <div className="csapat">
+    <div className="csapat summary-section">
       <div className="tarolo">
         <div className="nevek">
           <h3>Csapattagok</h3>

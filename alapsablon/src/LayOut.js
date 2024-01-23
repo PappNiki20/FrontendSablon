@@ -31,6 +31,9 @@ const LayOut = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
+        <Container>
+          
+        </Container>
       </Navbar>
       <Container>
         {/* Ide kerül majd az útvonalak/linkek által meghatározott tartalom */}
