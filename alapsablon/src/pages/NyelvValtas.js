@@ -1,29 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useLanguage } from './NyelvSegedlet';
 
-export default function NyelvValtas() {
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
-
-  const languages = [
-    { code: 'en', name: 'English' },
-    { code: 'fr', name: 'French' },
-    { code: 'es', name: 'Spanish' },
-    // More languages
-  ];
+const NyelvValtas = () => {
+  const { selectedLanguage, handleLanguageChange } = useLanguage();
 
   const handleChangeLanguage = (event) => {
-    setSelectedLanguage(event.target.value);
-    // You should put this into a context so the whole app will be able to access it and avoid prop drilling
+    const newLanguage = event.target.value;
+    handleLanguageChange(newLanguage);
   };
 
   return (
     <>
       <select value={selectedLanguage} onChange={handleChangeLanguage}>
-        {languages.map((language) => (
-          <option key={language.code} value={language.code}>
-            {language.name}
-          </option>
-        ))}
+        <option value="hu"> Magyar </option>
+        <option value="en"> English </option>
       </select>
     </>
   );
-}
+};
+
+export default NyelvValtas;
+
+ 

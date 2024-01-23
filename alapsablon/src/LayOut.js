@@ -1,10 +1,16 @@
 import React, { useState } from 'react';
 import { Navbar, Container, Button, Collapse, Nav } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons'; */
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link, Outlet } from 'react-router-dom';
+import NyelvValtas from './pages/NyelvValtas';
+
+//ÚJ:
+import { LanguageProvider } from './pages/NyelvSegedlet';
+
+
 
 const LayOut = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,6 +22,8 @@ const LayOut = () => {
   return (
 
     <>
+    {/* ÚJ */}
+    <LanguageProvider>
      
       <header className='szin p-3 '><h1>Art Of Survival</h1></header>
       
@@ -34,7 +42,7 @@ const LayOut = () => {
           </Navbar.Collapse>
         </Container>
         <Container>
-          
+          <NyelvValtas />
         </Container>
       </Navbar>
       <Container>
@@ -50,6 +58,8 @@ const LayOut = () => {
       </footer>
      
 
+      {/* ÚJ */}
+      </LanguageProvider>
       
     </>
   );
