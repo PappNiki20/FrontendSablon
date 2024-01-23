@@ -30,3 +30,6 @@ body {
   min-width: 1000px;
   background-color: #fbeae0;
 }
+.nyelvvalt{
+  justify-content: flex-end !important;
+}

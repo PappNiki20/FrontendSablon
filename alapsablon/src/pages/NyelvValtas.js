@@ -1,4 +1,5 @@
 import React from 'react';
+import "../css/Kozos.css";
 import { useLanguage } from './NyelvSegedlet';
 
 const NyelvValtas = () => {
@@ -11,7 +12,7 @@ const NyelvValtas = () => {
 
   return (
     <>
-      <select value={selectedLanguage} onChange={handleChangeLanguage}>
+      <select value={selectedLanguage} onChange={handleChangeLanguage} className="nyelvvalt">
         <option value="hu"> Magyar </option>
         <option value="en"> English </option>
       </select>

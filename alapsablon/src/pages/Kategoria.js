@@ -32,13 +32,17 @@ export default function Kategoria() {
             {kategoriak.map((elem, i) => {
               return (
                 <li className="egyKategoria p-3" key={i}>
-                  {/* <div style={{ whiteSpace: "pre-wrap"}}> */}
-                    {selectedLanguage === "hu" ? elem.magyar : elem.angol}
-                    {/* <br></br> */}
+                  {/* <span style={{ display: "block"}}> */}
+                  <>
+                    {selectedLanguage === "hu"
+                      ? elem.magyar + "\t"
+                      : elem.angol + "\t"}
+                      <br /> 
                     {selectedLanguage === "hu"
                       ? elem.magyarLeir
                       : elem.angolLeir}
-                  {/* </div> */}
+                  </>
+                  {/* </span> */}
                   <Nav.Link as={Link} to="/csapat">
                     <pre />{" "}
                     {selectedLanguage === "hu" ? "Tovább..." : "More..."}
