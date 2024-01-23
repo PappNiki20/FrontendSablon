@@ -5,9 +5,12 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: #FF9D4B;
 }
-
+.cont{
+    
+  background-color: #FFA860;
+}
 .summary-section {
   display: flex;
   align-items: center;
