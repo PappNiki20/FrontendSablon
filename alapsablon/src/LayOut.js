@@ -17,7 +17,7 @@ const LayOut = () => {
 
     <>
      
-      <header className='p-3 '><h1>Arc Projekt</h1></header>
+      <header className='p-3 '><h1>Art Of Survival</h1></header>
       
      <Navbar bg="dark" variant="dark" expand="sm" className='p-2'>
         <Container>
@@ -27,6 +27,7 @@ const LayOut = () => {
             <Nav className="mr-auto">
               <Nav.Link as={Link} to="/alkoto">Alkotó</Nav.Link>
               <Nav.Link as={Link} to="/csapat">Csapat</Nav.Link>
+              <Nav.Link as={Link} to="/kategoria">Kategóriák</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

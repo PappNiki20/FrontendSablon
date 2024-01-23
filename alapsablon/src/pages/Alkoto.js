@@ -1,7 +1,7 @@
 import "../css/Alkoto.css";
 export default function Alkoto() {
   return (
-    <div className="summary-section">
+    <div className="alkoto summary-section">
       <div className="seged">
         <header>
           <h1>Zöldlomb Legolas</h1>

@@ -18,7 +18,7 @@ const BgImageWithNavbar = () => {
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className='text-white text-center'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3'>Üdvözöllek az oldalon!</h3>
+                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
                   <h4 className='mb-4'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
