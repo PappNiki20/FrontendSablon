@@ -1,29 +1,41 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/Buszkesegek.css";
 import { alkotok } from "../Alkotok";
 import React from "react";
-import Card from "react-bootstrap/Card";
-import { Link } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+import "../css/Kozos.css";
+
 export default function Buszkesegeink() {
   return (
-    <div className=" row">
-      {alkotok.map((elem, index) => {
-        return (
-          <div class="card col-md-6">
-            <img src={elem.src} alt="" className="card-img-top h-150px" />
-            <div class="card-body">
-              <h4 class="card-title">{elem.nev}</h4>
-              <h4 class="card-text">{"Szak: " + elem.szak}</h4>
+    <div className="summary-section">
+      <div className="cont">
+        <div className="row row-cols-1 row-cols-md-2 g-3">
+          {alkotok.map((elem, index) => (
+            <div key={index} className="col">
+              <div className="card mb-3" style={{ maxWidth: "540px" }}>
+                <div className="row g-0">
+                  <div className="col-md-4">
+                    <img
+                      src={elem.src}
+                      alt=""
+                      className="img-fluid rounded-start"
+                    />
+                  </div>
+                  <div className="col-md-8 d-flex flex-column">
+                    <div className="card-body text-center p-3">
+                      <h5 className="card-title">{elem.nev}</h5>
+                      <p className="card-text">{"Szak: " + elem.szak}</p>
+                    </div>
+                    <div className="mt-auto text-center p-3">
+                      <a href="/alkoto" className="btn btn-primary">
+                        Megtekintés
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card-footer">
-              <a href="/alkoto" class="btn btn-primary">
-                Megtekintés
-              </a>
-            </div>
-          </div>
-        );
-      })}
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

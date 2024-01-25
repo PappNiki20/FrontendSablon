@@ -9,6 +9,11 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .summary-section {
@@ -18,18 +23,86 @@ body {
   margin-top: 20px;
   flex-direction: column;
   text-align: center;
- 
 }
-.tarolo,
-.cont,
-.seged {
+
+.cont {
   padding: 15px;
   border: 1px solid #ffc49b;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 1000px;
   background-color: #fbeae0;
+  flex-grow: 1;
 }
-.nyelvvalt{
-  justify-content: flex-end !important;
+
+.lang-select {
+  position: relative;
+}
+
+.btn-select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.flag-icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.dropdown-list {
+  
+  list-style: none;
+  padding: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+ 
+  border-radius: 5px;
+  overflow: hidden;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown-list.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-list li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dropdown-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-list img {
+  width: 20px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.b {
+  display: none;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.open .b {
+  display: block;
 }

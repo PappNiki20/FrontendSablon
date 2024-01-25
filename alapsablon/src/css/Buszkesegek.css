@@ -1,8 +1,0 @@
-.row{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.card{
-    margin: 5px;
-
-}

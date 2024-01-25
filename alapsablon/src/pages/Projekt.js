@@ -1,4 +1,4 @@
-import "../css/Projekt.css";
+
 export default function Projekt() {
   return (
     <div>

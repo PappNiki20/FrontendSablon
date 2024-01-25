@@ -1,31 +1,98 @@
-import "../css/Alkoto.css";
 import "../css/Kozos.css";
+import React from "react";
 export default function Alkoto() {
   return (
-    <div className="alkoto summary-section">
-      <div className="seged">
-        <header>
+    <div className="alkoto summary-section " style={{ padding: "20px" }}>
+      <div className="cont">
+        <header className="text-center">
           <h1>Zöldlomb Legolas</h1>
         </header>
-        <div className="egyAlkoto">
-          <div className="felsoresz">
-            <div className="adatok">
-              <h4>Szak: Grafikus</h4>
-              <h4>Projekt neve: Újrahasznosított fólia-projekt</h4>
-              <h4>Kategória: Újrahasznosítás</h4>
+       
+          <div >
+            <h2
+              style={{
+                fontSize: "1.5em",
+                fontWeight: "bold",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              Szak:
+            </h2>
+            <p
+              style={{
+                fontSize: "1.2em",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              Grafikus
+            </p>
+            <h2
+              style={{
+                fontSize: "1.5em",
+                fontWeight: "bold",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              {" "}
+              Projekt neve:
+            </h2>
+            <p
+              style={{
+                fontSize: "1.2em",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              Újrahasznosított fólia-projekt
+            </p>
+            <h2
+              style={{
+                fontSize: "1.5em",
+                fontWeight: "bold",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              {" "}
+              Kategória:
+            </h2>
+            <p
+              style={{
+                fontSize: "1.2em",
+                marginBottom: "10px",
+                textAlign: "justify",
+              }}
+            >
+              {" "}
+              Újrahasznosítás
+            </p>
             </div>
-            <div className="alkotokep">
+            <div className="">
               <img
                 src="./kepek/legolas.jpg"
                 alt="a kep alt-ja ha nem tolt be"
-                style={{ maxWidth: "10wv", width: "100%" }}
-                className="kep"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto",
+                  borderRadius: "10%",
+                  boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
+                }}
+                className="img-fluid"
               />
-            </div>
+            
           </div>
-          <div className="alkBemutat">
-          <h3>Bemutatkozás</h3>
-            <p>
+          <div className="col-md-6">
+            <h3>Bemutatkozás</h3>
+            <p
+              style={{
+                textAlign: "justify",
+                fontSize: "1.1em",
+                lineHeight: "1.5",
+              }}
+            >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
               quam lacus, vulputate ac porta ac, vehicula pharetra enim. In
               ipsum felis, eleifend at erat in, volutpat condimentum dolor.
@@ -48,6 +115,6 @@ export default function Alkoto() {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 }

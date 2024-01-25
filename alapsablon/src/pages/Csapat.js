@@ -1,60 +1,83 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "../css/Csapat.css";
-
-import "../css/Kozos.css";
-import { kepek } from "../KepLista";
+import React from "react";
 import { Carousel, Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { kepek } from "../KepLista";
 import KepGaleria from "./Galeria";
+import "../css/Kozos.css";
 export default function Csapat() {
   return (
-    <div className="csapat summary-section">
-      <div className="tarolo">
-        <div className="nevek">
-          <h3>Csapattagok</h3>
-          <ul>
-            <li>
-              <Nav.Link as={Link} to="/alkoto">
+    <div className="summary-section">
+      <div className="cont">
+        <div>
+          <h3 className="mb-4" style={{ textAlign: "justify" }}>
+            Csapattagok
+          </h3>
+          <ul className="list-unstyled">
+            <li className="mb-2">
+              <Nav.Link
+                as={Link}
+                to="/alkoto"
+                style={{
+                  fontSize: "1.2em",
+                  marginBottom: "10px",
+                  textAlign: "justify",
+                }}
+              >
                 Zöldlomb Legolas - designer
               </Nav.Link>
             </li>
-            <li>
-              <Nav.Link as={Link} to="/alkoto">
+            <li className="mb-2">
+              <Nav.Link
+                as={Link}
+                to="/alkoto"
+                style={{
+                  fontSize: "1.2em",
+                  marginBottom: "10px",
+                  textAlign: "justify",
+                }}
+              >
                 Zöldlomb Legolas - designer
               </Nav.Link>
             </li>
-            <li>
-              <Nav.Link as={Link} to="/alkoto">
-                Zöldlomb Legolas - designer
-              </Nav.Link>
-            </li>
-            <li>
-              <Nav.Link as={Link} to="/alkoto">
+            <li className="mb-2">
+              <Nav.Link
+                as={Link}
+                to="/alkoto"
+                style={{
+                  fontSize: "1.2em",
+                  marginBottom: "10px",
+                  textAlign: "justify",
+                }}
+              >
                 Zöldlomb Legolas - designer
               </Nav.Link>
             </li>
           </ul>
         </div>
-        <div className="leiras">
-          <h3>Csapatmunka bemutatása</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            <br />
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            <br />
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
-            <br />
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum
+        <div className="mt-4">
+          <h3 style={{ textAlign: "justify" }}>Csapatmunka bemutatása</h3>
+          <p
+            style={{
+              fontSize: "1.2em",
+              marginBottom: "10px",
+              textAlign: "justify",
+            }}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quam
+            lacus, vulputate ac porta ac, vehicula pharetra enim. In ipsum
+            felis, eleifend at erat in, volutpat condimentum dolor. Vivamus ac
+            orci lobortis nisl cursus sollicitudin eu a sem. Integer tristique,
+            lacus pellentesque fringilla porttitor, massa tellus semper odio, ac
+            ultrices felis purus vitae tortor. Curabitur varius nisi arcu, at
+            sollicitudin enim suscipit vitae. In hac habitasse platea dictumst.
+            Phasellus ac ligula finibus, eleifend justo eget, dignissim risus.
+            Aliquam sodales feugiat pellentesque. Aliquam pharetra eget lorem ac
+            eleifend. Maecenas et purus eget erat convallis interdum.
           </p>
         </div>
-        <div className=" galeria container mt-5">
-          <Carousel>
+        <h3 style={{ textAlign: "justify" }}>Képek a Csapatmunkájáról: </h3>
+        <div className="mt-5 d-flex justify-content-center">
+          <Carousel style={{ width: "60%" }}>
             {kepek.map((kep) => (
               <Carousel.Item key={kep.id}>
                 <img className="d-block w-100" src={kep.src} alt={kep.cim} />
@@ -65,23 +88,32 @@ export default function Csapat() {
             ))}
           </Carousel>
         </div>
-        <div className="videok ">
-          <div className="card">
+        <h3 style={{ textAlign: "justify" }}>Videók: </h3>
+        <div className="mt-4 d-flex justify-content-center">
+          <div className="video-container mx-2">
             <iframe
-              className="img-thumbnail"
+              width="400"
+              height="225"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              title="Video 1"
+              allowFullScreen
             ></iframe>
           </div>
-          <div className="card">
+          <div className="video-container mx-2">
             <iframe
-              className="img-thumbnail"
+              width="400"
+              height="225"
               src="https://www.youtube.com/embed/tgbNymZ7vqY"
+              title="Video 2"
+              allowFullScreen
             ></iframe>
           </div>
         </div>
-        <div className="kepgaleria container">
-          <KepGaleria kepek={kepek} />
-        </div>
+        <h3 style={{ textAlign: "justify" }}>Teljes képgaléria: </h3>
+        <div className="mt-4">
+  <KepGaleria kepek={kepek} style={{ display: "flex", justifyContent: "center", flexWrap: "wrap" }} />
+</div>
+
       </div>
     </div>
   );

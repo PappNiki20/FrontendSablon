@@ -1,55 +1,40 @@
 import { Nav } from "react-bootstrap";
 import { kategoriak } from "../KatLista";
-import { Link, Outlet } from "react-router-dom";
-import "../css/Kategoria.css";
+import { Link } from "react-router-dom";
 import "../css/Kozos.css";
-/* import NyelvValtas from "./NyelvValtas"; */
-/* import { useState } from "react"; */
 import { useLanguage } from "./NyelvSegedlet";
 
 export default function Kategoria() {
-  /*   const [selectedLanguage, setSelectedLanguage] = useState("hu");
-
-  const handleLanguageChange = (newLanguage) => {
-    setSelectedLanguage(newLanguage);
-    // Itt lehet implementálni a nyelvváltáshoz szükséges logikát
-    // Például: frissíteni a kategoriak listát a kiválasztott nyelvnek megfelelően
-  }; */
-
-  //ÚJ
   const { selectedLanguage } = useLanguage();
 
   return (
     <div className="summary-section">
-      {/* <NyelvValtas kivalasztottNyelv={handleLanguageChange} /> */}
-      <div className="seged">
+      <div className="cont">
         <div className="kat">
           <header>
             <h1>{selectedLanguage === "hu" ? "Kategóriák" : "Categories"}</h1>
           </header>
-
-          <ul>
-            {kategoriak.map((elem, i) => {
-              return (
-                <li className="egyKategoria p-3" key={i}>
-                  {/* <span style={{ display: "block"}}> */}
-                  <>
-                    {selectedLanguage === "hu"
-                      ? elem.magyar + "\t"
-                      : elem.angol + "\t"}
-                      <br /> 
-                    {selectedLanguage === "hu"
-                      ? elem.magyarLeir
-                      : elem.angolLeir}
-                  </>
-                  {/* </span> */}
+  
+          <ul className="list-group list-group-flush">
+            {kategoriak.map((elem, i) => (
+              <li className="list-group-item border-0 border-bottom border-dark egyKategoria bg-transparent" key={i}>
+                <div className="d-flex justify-content-between align-items-center">
+                  <div>
+                    <h5 className="mb-0">
+                      {selectedLanguage === "hu" ? elem.magyar : elem.angol}
+                    </h5>
+                    <p className="mb-0">
+                      {selectedLanguage === "hu"
+                        ? elem.magyarLeir
+                        : elem.angolLeir}
+                    </p>
+                  </div>
                   <Nav.Link as={Link} to="/csapat">
-                    <pre />{" "}
                     {selectedLanguage === "hu" ? "Tovább..." : "More..."}
                   </Nav.Link>
-                </li>
-              );
-            })}
+                </div>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
