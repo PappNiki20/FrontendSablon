@@ -75,7 +75,7 @@ footer {
 }
 
 .footer-contact {
-  font-size: 18px; /* Szöveg mérete */
+  font-size: 18px;
 }
 @media (max-width: 768px) {
   .summary-section {
@@ -90,6 +90,6 @@ footer {
   }
 
   .summary-content .summary-image {
-    order: -1; /* Mobil nézetben is kép legyen bal oldalon */
+    order: -1; 
   }
 }

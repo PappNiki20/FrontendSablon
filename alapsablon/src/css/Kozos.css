@@ -107,3 +107,40 @@ body {
 .open .b {
   display: block;
 }
+
+@media only screen and (max-width: 575px) {
+  
+}
+
+/* Táblagépek */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+}
+
+/* Kisebb képernyőjű laptopok és nagyobb telefonok */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .summary-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .summary-text {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .summary-content .summary-image {
+    order: -1; 
+  }
+}
+
+/* Kisebb asztali számítógépek és laptopok */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Nagyobb asztali számítógépek */
+@media only screen and (min-width: 1200px) {
+  
+}
