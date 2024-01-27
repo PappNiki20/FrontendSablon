@@ -1,9 +1,10 @@
 import { Carousel } from "react-bootstrap";
 import { kepek } from "../KepLista";
-
+import "../css/Kozos.css";
 export default function Projekt() {
   return (
-    <div>
+    <div className="summary-section">
+    <div className="cont">
        <h2>A projekt Lényege</h2>
        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias non tenetur reiciendis molestias, nobis quo asperiores aspernatur dolorum ex, porro labore dolor quibusdam similique quos at voluptate nisi. Quas, doloremque.
        Corrupti accusantium commodi a dicta quos sit. Atque, impedit repudiandae! Accusantium voluptatum reiciendis cum voluptatibus quos tempora eum vero beatae dolorem consequuntur quasi, cupiditate, corrupti excepturi fuga repellat illum ipsa.
@@ -35,6 +36,7 @@ export default function Projekt() {
             ))}
           </Carousel>
         </div>
+    </div>
     </div>
     
   );

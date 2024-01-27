@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const BgImageWithNavbar = () => {
   return (
 
-    <header  className="hero-header" style={{ paddingLeft: 0}}>
+    <header  className="hero-header" style={{ paddingTop: '100px', width: '100%'}}>
       <Carousel>
         <Carousel.Item>
           <img
