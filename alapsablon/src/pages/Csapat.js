@@ -28,6 +28,7 @@ export default function Csapat() {
           <ul className="list-unstyled">
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -41,6 +42,7 @@ export default function Csapat() {
             </li>
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -54,6 +56,7 @@ export default function Csapat() {
             </li>
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -130,8 +133,7 @@ export default function Csapat() {
               zIndex: 1,
               borderRadius: "10px",
               position: "absolute",
-              left: "300px",
-              right: "300px",
+              margin:"100px",
               top: "auto",
               backgroundColor: "rgb(248, 223, 188)",
               maxWidth: "800px",

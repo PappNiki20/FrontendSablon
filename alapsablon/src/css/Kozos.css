@@ -35,7 +35,9 @@ body {
   background-color: #fbeae0;
   flex-grow: 1;
 }
-
+.link:hover{
+  color: red;
+}
 .lang-select {
   position: relative;
 }
