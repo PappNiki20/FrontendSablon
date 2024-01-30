@@ -67,9 +67,9 @@ export default function Csapat() {
             </li>
           </ul>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 ">
           <h3 style={{ textAlign: "justify" }}>Csapatmunka bemutatása</h3>
-          <p
+          <p className="csapat_szov"
             style={{
               fontSize: "1.2em",
               marginBottom: "10px",
@@ -102,7 +102,7 @@ export default function Csapat() {
           </Carousel>
         </div>
         <h3 style={{ textAlign: "justify" }}>Videók: </h3>
-        <div className="mt-4 d-flex justify-content-center">
+        <div className="mt-4 d-flex justify-content-center videok">
           <div className="video-container mx-2">
             <iframe
               width="400"

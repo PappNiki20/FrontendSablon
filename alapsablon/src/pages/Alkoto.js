@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Alkoto() {
   return (
-    <div className="summary-section container">
+    <div className="summary-section ">
       <div className="cont">
         <div
           style={{
@@ -21,10 +21,10 @@ export default function Alkoto() {
               padding: "15px",
               borderRadius: "10px",
               width: "100%",
-            }}
+            }} 
           >
-            <div style={{ display: "flex", flex: "1" }}>
-              <div style={{ marginRight: "20px", flex: "0 0 auto" }}>
+            <div style={{ display: "flex", flex: "1" }} className="adatok">
+              <div className="alk_div" style={{ marginRight: "20px", flex: "0 0 auto" }} > 
                 <img
                   src="./kepek/legolas.jpg"
                   alt="a kep alt-ja ha nem tolt be"
@@ -34,18 +34,18 @@ export default function Alkoto() {
                     borderRadius: "10%",
                     boxShadow: "0 4px 8px rgba(0, 0, 0, 0.1)",
                   }}
-                  className="img-thumbnail"
+                  className="img-thumbnail alkoto_kep"
                 />
               </div>
               <div style={{ flex: "1", display: "flex", flexDirection: "column" }}>
                 <div>
-                  <h1 style={{ fontSize: "2em", marginBottom: "10px" }}>
+                  <h1 className="alkoto_nev" style={{ fontSize: "2em", marginBottom: "10px" }}>
                     Zöldlomb Legolas
                   </h1>
-                  <p style={{ fontSize: "1.5em", marginBottom: "10px" }}>
+                  <p style={{ fontSize: "1.5em", marginBottom: "10px" }} className="projekt_nev">
                     Projekt neve: Újrahasznosított fólia-projekt
                   </p>
-                  <p style={{ fontSize: "1.5em", marginBottom: "10px" }}>
+                  <p style={{ fontSize: "1.5em", marginBottom: "10px" }} className="csapat_n">
                     Csapat neve: XYZ Team
                   </p>
                 </div>
@@ -62,6 +62,7 @@ export default function Alkoto() {
                       cursor: "pointer",
                       transition: "background-color 0.3s",
                     }}
+                    className="alk_gomb"
                   >
                     Csapat oldalra
                   </button>
@@ -78,7 +79,7 @@ export default function Alkoto() {
             }}
           />
 
-          <div
+          <div className="infok"
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(2, 1fr)",
@@ -87,7 +88,7 @@ export default function Alkoto() {
               width: "100%",
             }}
           >
-            <div
+            <div 
               style={{
                 textAlign: "center",
                 background: "rgb(248, 223, 188)",
@@ -117,7 +118,7 @@ export default function Alkoto() {
             </div>
           </div>
 
-          <div
+          <div className="szoveg"
             style={{
               padding: "20px",
               width: "100%",

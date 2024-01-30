@@ -28,7 +28,7 @@ const Fooldal = () => {
               </div>
               <div className="summary-content">
 
-                <div className="summary-text">
+                <div className="summary-text felul">
                   <h1>Csapatok</h1>
 
                   <p>
@@ -36,7 +36,7 @@ const Fooldal = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
-                <div className="summary-image">
+                <div className="summary-image alul">
 
                   <img src="kepek/bg2.jpg" alt="Kép leírása" style={{ maxWidth: '600px', width: '100%', height: 'auto' }} />
                 </div>
@@ -47,7 +47,7 @@ const Fooldal = () => {
 
 
               <div className="summary-content left">
-                <div className="summary-text left">
+                <div className="summary-text left felul">
                   <h1>Alkotók</h1>
 
                   <p>
@@ -55,7 +55,7 @@ const Fooldal = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
-                <div className="summary-image left">
+                <div className="summary-image left alul">
 
                   <img src="kepek/bg3.jpg" alt="Kép leírása" style={{ maxWidth: '600px', width: '100%' }} />
                 </div>
@@ -64,7 +64,7 @@ const Fooldal = () => {
               <span></span>
 
               <div className="summary-content">
-                <div className="summary-text">
+                <div className="summary-text felul">
                   <h1>Projektek</h1>
 
                   <p>
@@ -72,7 +72,7 @@ const Fooldal = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
-                <div className="summary-image">
+                <div className="summary-image alul">
 
                   <img src="kepek/bg.jpg" alt="Kép leírása" style={{ maxWidth: '600px', width: '100%' }} />
                 </div>

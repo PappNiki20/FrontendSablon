@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Link, Outlet } from "react-router-dom";
 import NyelvValtas from "./pages/NyelvValtas";
 import { LanguageProvider } from "./pages/NyelvSegedlet";
+import "./css/Kozos.css";
 
 const LayOut = () => {
   return (
@@ -12,7 +13,7 @@ const LayOut = () => {
         <header className="szin p-3 ">
           <h1>Art Of Survival</h1>
         </header>
-        <Navbar bg="dark" variant="dark" expand="sm" className="p-2">
+        <Navbar bg="dark" variant="dark" expand="sm" className="p-2 navvv">
         <Container fluid>
   <Navbar.Brand as={Link} to="/">Főoldal</Navbar.Brand>
   <Navbar.Toggle aria-controls="basic-navbar-nav" />

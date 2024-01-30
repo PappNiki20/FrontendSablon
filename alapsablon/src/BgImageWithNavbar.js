@@ -5,27 +5,27 @@ import { Link } from 'react-router-dom';
 const BgImageWithNavbar = () => {
   return (
 
-    <header  className="hero-header" style={{ paddingTop: '100px', width: '100%'}}>
+    <header className="hero-header" style={{ paddingTop: '100px', width: '100%' }}>
       <Carousel>
-        <Carousel.Item>
+        <Carousel.Item >
           <img
-            className="d-block w-100"  
+            className="d-block w-100 menukep"
             src="kepek/bg2.jpg"
             alt="Slide 1"
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-md-block ">
             <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', height: '100vh' }}>
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <div className='text-white text-center'>
+                <div className='text-white text-center szovegdoboz'>
                   <h1 className='mb-3'>ARC Project</h1>
                   <h2 className='mb-3 padd'>Üdvözöllek az oldalon!</h2>
-                  <h3 className='mb-3 padd'>Art Of Survival projekt bemutatása </h3>
-                  <h4 className='mb-4'>
+
+                  <h4 className='mb-4 meret'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </h4>
-                  <Link className='btn btn-outline-light btn-lg' to='/projekt' role='button'>
-                   A Projektről bővebben..
+                  <Link className='btn btn-outline-light btn-lg gomb' to='/projekt' role='button'>
+                    A Projektről bővebben..
                   </Link>
                 </div>
               </div>
@@ -34,45 +34,45 @@ const BgImageWithNavbar = () => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-          className="d-block w-100"
+            className="d-block w-100 menukep"
             src="kepek/bg.jpg"
             alt="Slide 2"
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption  d-md-block">
             <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', height: '100vh' }}>
               <div className='d-flex justify-content-center align-items-center h-100'>
                 <div className='text-white text-center'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
-                  <h4 className='mb-4'>
+                 
+                  <h4 className='mb-4 meret'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </h4>
-                  <Link className='btn btn-outline-light btn-lg' to='/alkoto' role='button'>
+                  <Link className='btn btn-outline-light btn-lg gomb' to='/alkoto' role='button'>
                     Alkotók
                   </Link>
                 </div>
-              </div>
-            </div>
-          </div>
-        </Carousel.Item>
+              </div >
+            </div >
+          </div >
+        </Carousel.Item >
         <Carousel.Item>
           <img
-          className="d-block w-100"
+            className="d-block w-100 menukep" 
             src="kepek/bg3.jpg"
             alt="Slide 3"
           />
-          <div className="carousel-caption d-none d-md-block">
+          <div className="carousel-caption d-md-block">
             <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)', height: '100vh' }}>
               <div className='d-flex justify-content-center align-items-center h-100'>
-                <div className='text-white text-center'>
+                <div className='text-white text-center meret'>
                   <h1 className='mb-3'>ARC Project</h1>
-                  <h3 className='mb-3 padd'>Üdvözöllek az oldalon!</h3>
-                  <h4 className='mb-4'>
+                  
+                  <h4 className='mb-4 meret'>
                     {/* Lorem Ipsum szöveg */}
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   </h4>
-                  <Link className='btn btn-outline-light btn-lg' to='/csapat' role='button'>
+                  <Link className='btn btn-outline-light btn-lg gomb' to='/csapat' role='button'>
                     Csapatok
                   </Link>
                 </div>
@@ -80,9 +80,9 @@ const BgImageWithNavbar = () => {
             </div>
           </div>
         </Carousel.Item>
-      </Carousel>
-    </header>
-    
+      </Carousel >
+    </header >
+
   );
 }
 
