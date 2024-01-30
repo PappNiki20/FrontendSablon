@@ -6,6 +6,7 @@ import KepGaleria from "./Galeria";
 import { useState } from "react";
 import "../css/Kozos.css";
 import Kep from "./Kep";
+import GaleriaKep from "./GaleriaKep";
 export default function Csapat() {
   const [nagyKepLathato, setNagyKepLathato] = useState(false);
   const [aktKep, setAktKep] = useState(0);
@@ -150,7 +151,7 @@ export default function Csapat() {
             >
               ✖️
             </button>
-            <Kep obj={kepek[aktKep]} style={{ width: "40%", margin: "10px" }} />
+            <GaleriaKep obj={kepek[aktKep]} style={{ width: "40%", margin: "10px" }} />
           </div>
         )}
 
