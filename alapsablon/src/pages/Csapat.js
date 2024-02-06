@@ -6,6 +6,7 @@ import KepGaleria from "./Galeria";
 import { useState } from "react";
 import "../css/Kozos.css";
 import Kep from "./Kep";
+import GaleriaKep from "./GaleriaKep";
 export default function Csapat() {
   const [nagyKepLathato, setNagyKepLathato] = useState(false);
   const [aktKep, setAktKep] = useState(0);
@@ -28,6 +29,7 @@ export default function Csapat() {
           <ul className="list-unstyled">
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -41,6 +43,7 @@ export default function Csapat() {
             </li>
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -54,6 +57,7 @@ export default function Csapat() {
             </li>
             <li className="mb-2">
               <Nav.Link
+              className="link"
                 as={Link}
                 to="/alkoto"
                 style={{
@@ -67,9 +71,9 @@ export default function Csapat() {
             </li>
           </ul>
         </div>
-        <div className="mt-4">
+        <div className="mt-4 ">
           <h3 style={{ textAlign: "justify" }}>Csapatmunka bemutatása</h3>
-          <p
+          <p className="csapat_szov"
             style={{
               fontSize: "1.2em",
               marginBottom: "10px",
@@ -102,7 +106,7 @@ export default function Csapat() {
           </Carousel>
         </div>
         <h3 style={{ textAlign: "justify" }}>Videók: </h3>
-        <div className="mt-4 d-flex justify-content-center">
+        <div className="mt-4 d-flex justify-content-center videok">
           <div className="video-container mx-2">
             <iframe
               width="400"
@@ -130,8 +134,7 @@ export default function Csapat() {
               zIndex: 1,
               borderRadius: "10px",
               position: "absolute",
-              left: "300px",
-              right: "300px",
+              margin:"100px",
               top: "auto",
               backgroundColor: "rgb(248, 223, 188)",
               maxWidth: "800px",
@@ -148,7 +151,7 @@ export default function Csapat() {
             >
               ✖️
             </button>
-            <Kep obj={kepek[aktKep]} style={{ width: "40%", margin: "10px" }} />
+            <GaleriaKep obj={kepek[aktKep]} style={{ width: "40%", margin: "10px" }} />
           </div>
         )}
 

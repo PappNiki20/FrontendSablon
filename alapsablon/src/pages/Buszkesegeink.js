@@ -7,16 +7,17 @@ export default function Buszkesegeink() {
   return (
     <div className="summary-section">
       <div className="cont">
-        <div className="row row-cols-1 row-cols-md-2 g-3">
+        <div className="cim"><h1>Iskolánk Büszkeségei</h1></div>
+        <div className="row row-cols-1 row-cols-md-2 g-3 kartya">
           {alkotok.map((elem, index) => (
-            <div key={index} className="col">
-              <div className="card mb-3" style={{ maxWidth: "540px" }}>
+            <div key={index} className="col ">
+              <div className="card mb-3 b_kartya" style={{ maxWidth: "540px" }}>
                 <div className="row g-0">
                   <div className="col-md-4">
                     <img
                       src={elem.src}
                       alt=""
-                      className="img-fluid rounded-start"
+                      className="img-fluid rounded-start buszke"
                     />
                   </div>
                   <div className="col-md-8 d-flex flex-column">
