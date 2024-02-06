@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/FrontendSablon/alapsablon/build/static/css/main.38c97610.css",
-    "main.js": "/FrontendSablon/alapsablon/build/static/js/main.4839995b.js",
-    "static/js/787.dbf18a97.chunk.js": "/FrontendSablon/alapsablon/build/static/js/787.dbf18a97.chunk.js",
-    "index.html": "/FrontendSablon/alapsablon/build/index.html",
-    "main.38c97610.css.map": "/FrontendSablon/alapsablon/build/static/css/main.38c97610.css.map",
-    "main.4839995b.js.map": "/FrontendSablon/alapsablon/build/static/js/main.4839995b.js.map",
-    "787.dbf18a97.chunk.js.map": "/FrontendSablon/alapsablon/build/static/js/787.dbf18a97.chunk.js.map"
+    "main.css": "/arcprojekt/static/css/main.38c97610.css",
+    "main.js": "/arcprojekt/static/js/main.ccb78f8d.js",
+    "static/js/787.dbf18a97.chunk.js": "/arcprojekt/static/js/787.dbf18a97.chunk.js",
+    "index.html": "/arcprojekt/index.html",
+    "main.38c97610.css.map": "/arcprojekt/static/css/main.38c97610.css.map",
+    "main.ccb78f8d.js.map": "/arcprojekt/static/js/main.ccb78f8d.js.map",
+    "787.dbf18a97.chunk.js.map": "/arcprojekt/static/js/787.dbf18a97.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38c97610.css",
-    "static/js/main.4839995b.js"
+    "static/js/main.ccb78f8d.js"
   ]
 }

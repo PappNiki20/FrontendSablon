@@ -37,16 +37,16 @@ const NyelvValtas = () => {
   return (
     <div className="lang-select">
       <button className={`btn-select ${isOpen ? 'open' : ''}`} value="" onClick={toggleDropdown}>
-        {selectedLanguage === 'hu' && <img src="./kepek/magyar.png" alt="Magyar Flag" className="flag-icon" />}
-        {selectedLanguage === 'en' && <img src="./kepek/angol.png" alt="English Flag" className="flag-icon" />}
+        {selectedLanguage === 'hu' && <img src={process.env.PUBLIC_URL+"/kepek/magyar.png"} alt="Magyar Flag" className="flag-icon" />}
+        {selectedLanguage === 'en' && <img src={process.env.PUBLIC_URL+"/kepek/angol.png"} alt="English Flag" className="flag-icon" />}
       </button>
       <div ref={dropdownRef} className={`dropdown-list ${isOpen ? 'open' : ''}`}>
         <button onClick={() => handleChangeLanguage('hu')}>
-          <img src="./kepek/magyar.png" alt="Magyar Flag" className="flag-icon" />
+          <img src={process.env.PUBLIC_URL+"/kepek/magyar.png"} alt="Magyar Flag" className="flag-icon" />
           <span>Magyar</span>
         </button>
         <button onClick={() => handleChangeLanguage('en')}>
-          <img src="./kepek/angol.png" alt="English Flag" className="flag-icon" />
+          <img src={process.env.PUBLIC_URL+"/kepek/angol.png"} alt="English Flag" className="flag-icon" />
           <span>English</span>
         </button>
         {/* További nyelvek ikonjai és nevei */}

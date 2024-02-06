@@ -10,7 +10,7 @@ const BgImageWithNavbar = () => {
         <Carousel.Item >
           <img
             className="d-block w-100 menukep"
-            src="kepek/bg2.jpg"
+            src={process.env.PUBLIC_URL+"/kepek/bg2.jpg"}
             alt="Slide 1"
           />
           <div className="carousel-caption d-md-block ">
@@ -35,7 +35,7 @@ const BgImageWithNavbar = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 menukep"
-            src="kepek/bg.jpg"
+            src={process.env.PUBLIC_URL+"/kepek/bg.jpg"}
             alt="Slide 2"
           />
           <div className="carousel-caption  d-md-block">
@@ -59,7 +59,7 @@ const BgImageWithNavbar = () => {
         <Carousel.Item>
           <img
             className="d-block w-100 menukep" 
-            src="kepek/bg3.jpg"
+            src={process.env.PUBLIC_URL+"/kepek/bg3.jpg"}
             alt="Slide 3"
           />
           <div className="carousel-caption d-md-block">

@@ -5,7 +5,6 @@ import { kepek } from "../KepLista";
 import KepGaleria from "./Galeria";
 import { useState } from "react";
 import "../css/Kozos.css";
-import Kep from "./Kep";
 import GaleriaKep from "./GaleriaKep";
 export default function Csapat() {
   const [nagyKepLathato, setNagyKepLathato] = useState(false);
@@ -97,7 +96,7 @@ export default function Csapat() {
           <Carousel style={{ width: "60%" }}>
             {kepek.map((kep) => (
               <Carousel.Item key={kep.id}>
-                <img className="d-block w-100" src={kep.src} alt={kep.cim} />
+                <img className="d-block w-100" src={process.env.PUBLIC_URL+kep.src} alt={kep.cim} />
                 <Carousel.Caption>
                   <h5>{kep.leiras}</h5>
                 </Carousel.Caption>
