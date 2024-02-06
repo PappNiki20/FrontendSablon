@@ -52,7 +52,7 @@ export default function Alkoto() {
                 <Link to="/csapat">
                   <button
                     style={{
-                      marginTop: "1%",
+                      marginTop: "14%",
                       padding: "10px",
                       fontSize: "1.2em",
                       backgroundColor: "#3498db",
