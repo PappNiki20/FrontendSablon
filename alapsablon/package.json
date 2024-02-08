@@ -2,7 +2,7 @@
   "name": "alapsablon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://pappniki20.github.io/FrontendSablon",
+  "homepage": "http://pappniki20.github.io/frontendsablon",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
